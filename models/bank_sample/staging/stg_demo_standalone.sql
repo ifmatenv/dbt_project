@@ -2,7 +2,7 @@
 
 source as (
 
-    select * from BANK_DEMO.PUBLIC.ACCOUNTS
+    select * from ACCOUNTS
 
 ),
 
