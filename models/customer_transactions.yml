@@ -1,0 +1,24 @@
+version: 2
+
+models:
+  - name: customer_transactions
+    description: "Table combining customer, account, and transaction data."
+    columns:
+      - name: customer_id
+        description: "Unique identifier for each customer."
+      - name: customer_full_name
+        description: "Full name of the customer."
+      - name: email
+        description: "Email address of the customer."
+      - name: account_id
+        description: "Unique identifier for each account."
+      - name: transaction_id
+        description: "Unique identifier for each transaction."
+      - name: transaction_type
+        description: "Type of the transaction (e.g., deposit, withdrawal)."
+      - name: amount
+        description: "Amount involved in the transaction."
+      - name: transaction_date
+        description: "Date when the transaction occurred."
+      - name: description
+        description: "Description of the transaction."

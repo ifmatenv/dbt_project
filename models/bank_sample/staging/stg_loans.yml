@@ -1,0 +1,20 @@
+version: 2
+
+models:
+  - name: stg_loans
+    description: "Staging table for loans data."
+    columns:
+      - name: loan_id
+        description: "Unique identifier for each loan."
+      - name: customer_id
+        description: "Foreign key linking to the customer."
+      - name: loan_type
+        description: "Type of the loan (e.g., mortgage, personal)."
+      - name: loan_amount
+        description: "Amount of the loan."
+      - name: interest_rate
+        description: "Interest rate of the loan."
+      - name: loan_date
+        description: "Date when the loan was issued."
+      - name: due_date
+        description: "Due date for the loan repayment."

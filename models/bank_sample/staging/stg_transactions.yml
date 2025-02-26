@@ -1,0 +1,16 @@
+version: 2
+
+models:
+    - name: stg_transactions
+      description: "Staging table for transactions data."
+      columns:
+        - name: transaction_id
+          description: "Unique identifier for each transaction."
+        - name: account_id
+          description: "Foreign key linking to the account."
+        - name: transaction_type
+          description: "Type of the transaction (e.g., deposit, withdrawal)."
+        - name: amount
+          description: "Amount of the transaction."
+        - name: transaction_date
+          description: "Date of the transaction."

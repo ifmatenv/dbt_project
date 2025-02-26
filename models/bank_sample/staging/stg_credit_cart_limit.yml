@@ -1,0 +1,10 @@
+version: 2
+
+models:
+  - name: stg_credit_card_limit
+    description: "Staging table for customers data."
+    columns:
+      - name: credit_limit
+        description: "credit card limit"
+      - name: customer_id
+        description: "customer_id"

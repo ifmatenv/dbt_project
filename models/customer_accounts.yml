@@ -1,0 +1,16 @@
+version: 2
+
+models:
+  - name: customer_accounts
+    description: "Customer Account Table."
+    columns:
+      - name: account_id
+        description: "Unique identifier for each account."
+      - name: customer_id
+        description: "Foreign key linking to the customer."
+      - name: account_type
+        description: "Type of the account (e.g., checking, savings)."
+      - name: balance
+        description: "Current balance of the account."
+      - name: created_at
+        description: "Account created at."

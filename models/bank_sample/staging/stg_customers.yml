@@ -1,0 +1,8 @@
+version: 2
+
+models:
+  - name: stg_customers
+    description: "Staging table for customers data."
+    columns:
+      - name: customer_full_name
+        description: "Fullname for each customer."

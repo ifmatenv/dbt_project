@@ -1,0 +1,2 @@
+SELECT *
+FROM BANK_DEMO.PUBLIC.transactions

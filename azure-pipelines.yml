@@ -1,0 +1,44 @@
+trigger:
+  branches:
+    include:
+      - '*'
+
+pool: Default
+
+variables:
+  PYTHON_REPO_URL: 'https://github.com/ifintdbt/ctm_python_client_dbt.git'
+
+jobs:
+- job: ExecutePythonScripts
+  steps:
+  - checkout: self
+    displayName: 'Checkout python repo'
+
+ # - task: UsePythonVersion@0
+ #   inputs:
+ #     versionSpec: '3.x'
+ #     addToPath: true
+
+ # - script: |
+ #     python -m pip install --upgrade pip
+ #     pip install -r requirements.txt
+ #   displayName: 'Install python dependencies'
+
+ # - script: |
+ #     git clone $(PYTHON_REPO_URL) python-project
+ #   displayName: 'Clone Python project repository'
+  
+ # - script: |
+ #     cd python-project
+ #     python -m pip install --upgrade pip
+ #     pip install -r requirements.txt
+ #   displayName: 'Install Python project dependencies'
+  
+#  - script: |
+#      cd C:\Projects\PythonCTM
+#      python main.py
+#    displayName: 'Run Python scripts'
+  - task: PythonScript@0
+    inputs:
+      scriptSource: 'filePath'
+      scriptPath: 'C:\Projects\PythonCTM\main.py'
